@@ -1,0 +1,62 @@
+body {
+  background-color: var(--bg-color);
+  color: var(--light-color-text);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.4;
+  font-family: var(--font-base);
+}
+
+*:focus-visible {
+  transition: outline 0s;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 1px solid var(--color-accent);
+  outline-offset: 1px;
+}
+
+a,
+button,
+input,
+textarea,
+svg * {
+  transition-duration: var(--transition-duration);
+}
+
+a {
+  color: initial;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 400;
+  font-family: var(--font-family-title);
+}
+
+.container {
+  margin-inline: auto;
+  padding-inline: var(--container-padding-x);
+  max-inline-size: calc(var(--container-width) + var(--container-padding-x) * 2);
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip-path: inset(100%) !important;
+  margin: -1px !important;
+  border: 0 !important;
+  padding: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  white-space: nowrap !important;
+  clip: rect(0 0 0 0) !important;
+  overflow: hidden !important;
+}
+
+.main-wrapper {
+  position: relative;
+}

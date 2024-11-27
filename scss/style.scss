@@ -1,0 +1,18 @@
+@import '_fonts',
+        '_normalize',
+        '_mixins',
+        '_media',
+        '_vars',
+        '_globals',
+        '_components';
+        
+@import "_choices";
+
+@import 'blocks/_header',
+        'blocks/_footer';
+
+
+@import 'pages/main/_popular',
+        'pages/main/_categories',
+        'pages/main/_recomendation';
+

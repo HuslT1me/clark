@@ -1,0 +1,50 @@
+.categories {
+  margin-block-end: 35px;
+
+  &__description-block {
+    margin-block-end: 12px;
+    border-radius: var(--br-text-blocks);
+    background: var(--light-color);
+    padding: 14px 7px;
+
+    @include mobile-sm {
+      padding: 6px;
+    }
+  }
+
+  &__categories-block {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+
+    @include tablet {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include mobile {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__categories-link {
+    @include flex-center;
+
+    flex-direction: column;
+    border-radius: var(--br-previews);
+    background: url(../media/previews/girl.jpg) center/cover no-repeat;
+    min-block-size: 134px;
+  }
+
+  &__categories-name {
+    color: var(--light-color);
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  &__categories-quantity {
+    color: var(--light-color);
+    font-weight: 500;
+    font-size: 14px;
+  }
+}

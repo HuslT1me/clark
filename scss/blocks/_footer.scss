@@ -1,0 +1,80 @@
+.footer {
+  background: var(--dark-color);
+  padding-block: 22px 40px;
+
+  &__inner {
+    display: flex;
+
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+
+  &__logo-block {
+    display: flex;
+    row-gap: 14px;
+    flex-direction: column;
+
+    @include mobile {
+      flex-direction: row;
+      justify-content: space-between;
+      margin-block-end: 20px;
+    }
+  }
+
+  &__copyright {
+    @include w-full(136px);
+    color: var(--copyright-color-text);
+
+    @include mobile {
+      text-align: right;
+    }
+  }
+
+  &__lists-block {
+    display: flex;
+    column-gap: 40px;
+    text-transform: uppercase;
+
+    @include mobile {
+      flex-direction: column;
+      row-gap: 20px;
+    }
+  }
+
+  &__list-title {
+    margin-block-end: 5px;
+    color: var(--light-gray-text);
+    font-weight: 500;
+    font-size: 13px;
+  }
+
+  &__list {
+    display: flex;
+    row-gap: 5px;
+    flex-direction: column;
+  }
+
+  &__list-item {
+    display: flex;
+    column-gap: 5px;
+    align-items: baseline;
+
+    &::before {
+      background: url(../media/icons/red-arrow.svg) center/contain no-repeat;
+      content: '';
+
+      @include square(9px);
+    }
+  }
+
+  &__list-link {
+    color: var(--alt-dark-gray-text);
+    font-weight: 500;
+
+    @include hover {
+      transition: var(--transition-duration);
+      color: var(--alt-accent-color);
+    }
+  }
+}
