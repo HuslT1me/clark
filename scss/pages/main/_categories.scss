@@ -27,12 +27,22 @@
   }
 
   &__categories-link {
-    @include flex-center;
-
     flex-direction: column;
+    transition: var(--transition-duration);
+    border: 1px solid transparent;
     border-radius: var(--br-previews);
     background: url(../media/previews/girl.jpg) center/cover no-repeat;
     min-block-size: 134px;
+
+    @include flex-center;
+    @include hover {
+      border-color: var(--alt-accent-color);
+
+      & > p {
+        transition: var(--transition-duration);
+        color: var(--pink-hover);
+      }
+    }
   }
 
   &__categories-name {

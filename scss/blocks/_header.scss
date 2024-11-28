@@ -4,10 +4,10 @@
 
   &__inner {
     display: flex;
+    column-gap: 10px;
     justify-content: space-between;
     align-items: center;
     min-block-size: var(--header-height);
-    column-gap: 10px;
 
     @include tablet {
       column-gap: 15px;
@@ -45,6 +45,10 @@
 
     &::before {
       translate: 0 -7px;
+
+      @include mobile {
+        translate: 0 -5px;
+      }
     }
 
     &::after {

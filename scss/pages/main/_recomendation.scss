@@ -41,8 +41,17 @@
     border-radius: 5px;
     background: url(../media/previews/girl-2.jpg) center/cover no-repeat;
     min-block-size: 95px;
+    border: 1px solid transparent;
 
     @include flex-center;
+    @include hover {
+      border-color: var(--alt-accent-color);
+
+      & > p {
+        transition: var(--transition-duration);
+        color: var(--pink-hover);
+      }
+    }
   }
 
   &__cover-text {

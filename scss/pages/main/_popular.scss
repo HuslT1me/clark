@@ -1,30 +1,6 @@
 .popular {
   margin-block-end: 18px;
 
-  &__accordion {
-    position: relative;
-  }
-
-  &__accordion-details {
-    display: none;
-
-    @include mobile {
-      display: block;
-      position: absolute;
-      top: 25px;
-      right: 20px;
-      content: '';
-    }
-  }
-
-  &__accordion-summary {
-    list-style: none;
-  }
-
-  &__accordion-details[open] + .popular__info-block {
-    grid-template-rows: auto;
-  }
-
   &__info-block {
     display: grid;
     transition: var(--transition-duration);
@@ -34,20 +10,62 @@
     padding: 11px 52px 23px 23px;
 
     @include mobile {
-      grid-template-rows: 0fr;
+      padding: 6px 7px;
     }
   }
 
   &__info-question {
+    margin-block-end: 5px;
     color: var(--question-text-color);
     font-weight: 500;
     font-size: 13px;
     font-family: var(--font-base-alt);
+    display: flex;
+    justify-content: space-between;
+
+    @include mobile {
+      margin-block-end: 0;
+    }
+  }
+
+  &__info-button {
+    display: none;
+    
+    @include mobile {
+      border: none;
+      display: block;
+      background: none;
+    }
+  }
+
+  &__info-text-grid {
+    @include mobile {
+      display: grid;
+      grid-template-rows: 0fr;
+      opacity: 0;
+      transition: all 0.4s;
+      min-block-size: 0;
+      overflow: hidden;
+    }
+  }
+
+  &__info-text-grid--active {
+    @include mobile {
+      grid-template-rows: 1fr;
+      opacity: 1;
+      padding-block-start: 5px;
+    }
   }
 
   &__info-text-wrapper {
     display: flex;
     column-gap: 42px;
+
+    @include mobile {
+      row-gap: 20px;
+      flex-direction: column;
+      min-height: 0;
+    }
   }
 
   &__info-text--left {
@@ -172,6 +190,14 @@
       content: '';
 
       @include square(9px);
+    }
+  }
+
+  &__list li span > a {
+    display: none;
+
+    @include mobile {
+      display: inline-block;
     }
   }
 

@@ -35,4 +35,11 @@ function closeModalOnOverlay({ currentTarget, target }) {
 modal.addEventListener("click", closeModalOnOverlay);
 modal.addEventListener("cancel", () => closeModal());
 
+const accordionLink = document.querySelector('.popular__info-question');
+const accodionBody = document.querySelector('.popular__info-text-grid');
+
+accordionLink.addEventListener('click', () => {
+  accodionBody.classList.toggle('popular__info-text-grid--active')
+})
+
 defaultSelect();
