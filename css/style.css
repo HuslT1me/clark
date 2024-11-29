@@ -1277,6 +1277,7 @@ h4 {
 .popular__top-projects-block {
   display: flex;
   column-gap: 13px;
+  justify-content: space-between;
 }
 @media (max-width: 767px) {
   .popular__top-projects-block {

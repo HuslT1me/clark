@@ -79,6 +79,7 @@
   &__top-projects-block {
     display: flex;
     column-gap: 13px;
+    justify-content: space-between;
 
     @include mobile {
       row-gap: 10px;
