@@ -965,6 +965,7 @@ h4 {
   background: var(--light-gray);
   padding-block: 10px;
   block-size: 100%;
+  block-size: 100svh;
   overflow-y: auto;
 }
 .burger-menu__content-wrapper {
