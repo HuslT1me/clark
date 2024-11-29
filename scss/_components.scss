@@ -285,6 +285,7 @@
     padding-block: 13px 50px;
     inline-size: 100%;
     block-size: 100%;
+    overflow-y: auto;
 
     .favorite-categories__list-title {
       column-gap: 16px;
