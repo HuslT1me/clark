@@ -12,60 +12,9 @@
         <div class="container">
           <div class="header__inner">
             <div class="header__burger-block">
-              <div class="header__burger-wrapper">
-                <button class="header__burger-btn" type="button">
-                  <span class="visually-hidden">Open menu</span>
-                </button>
-                <div class="header__burger-content">
-                  <div class="header__content-block header__content-block--mobile">
-                    <nav class="header__navigation">
-                      <ul class="header__navigation-list">
-                        <li class="header__navigation-list-item">
-                          <a class="header__navigation-list-link" href="#">
-                            <svg class="icon icon--raitings" width="21" height="21">
-                              <use class="icon__item" href="../media/icons/sprite.svg#raitings"></use>
-                            </svg>
-                            top rated
-                          </a>
-                        </li>
-                        <li class="header__navigation-list-item">
-                          <a class="header__navigation-list-link" href="#">
-                            <svg class="icon icon--new" width="16" height="16">
-                              <use class="icon__item" href="../media/icons/sprite.svg#new"></use>
-                            </svg>
-                            new reviews
-                          </a>
-                        </li>
-                        <li class="header__navigation-list-item">
-                          <a class="header__navigation-list-link" href="#">
-                            <svg class="icon icon--discount" width="17" height="14">
-                              <use class="icon__item" href="../media/icons/sprite.svg#discount"></use>
-                            </svg>
-                            discount porn
-                          </a>
-                        </li>
-                        <li class="header__navigation-list-item">
-                          <a class="header__navigation-list-link" href="#">
-                            <svg class="icon icon--arrow" width="12" height="8">
-                              <use class="icon__item" href="../media/icons/sprite.svg#arrow"></use>
-                            </svg>
-                            categories
-                          </a>
-                        </li>
-                      </ul>
-                    </nav>
-                    <select class="header__select-language" name="language">
-                      <option class="header__select-item" value="">English</option>
-                      <option class="header__select-item" value="spanish">Español</option>
-                      <option class="header__select-item" value="french">French</option>
-                      <option class="header__select-item" value="italian">Italian</option>
-                    </select>
-                    <div class="header__input-wrapper">
-                      <input class="header__input-search" type="text" placeholder="Search text" />
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <button class="burger-btn" type="button">
+                <span class="visually-hidden">Open menu</span>
+              </button>
             </div>
             <div class="header__logo-block">
               <a class="header__logo-link" href="#">
@@ -75,34 +24,34 @@
               </a>
             </div>
             <div class="header__content-block">
-              <nav class="header__navigation">
-                <ul class="header__navigation-list">
-                  <li class="header__navigation-list-item">
-                    <a class="header__navigation-list-link" href="#">
+              <nav class="navigation">
+                <ul class="navigation__list">
+                  <li class="navigation__list-item">
+                    <a class="navigation__list-link" href="#">
                       <svg class="icon icon--raitings" width="21" height="21">
                         <use class="icon__item" href="../media/icons/sprite.svg#raitings"></use>
                       </svg>
                       top rated
                     </a>
                   </li>
-                  <li class="header__navigation-list-item">
-                    <a class="header__navigation-list-link" href="#">
+                  <li class="navigation__list-item">
+                    <a class="navigation__list-link" href="#">
                       <svg class="icon icon--new" width="16" height="16">
                         <use class="icon__item" href="../media/icons/sprite.svg#new"></use>
                       </svg>
                       new reviews
                     </a>
                   </li>
-                  <li class="header__navigation-list-item">
-                    <a class="header__navigation-list-link" href="#">
+                  <li class="navigation__list-item">
+                    <a class="navigation__list-link" href="#">
                       <svg class="icon icon--discount" width="17" height="14">
                         <use class="icon__item" href="../media/icons/sprite.svg#discount"></use>
                       </svg>
                       discount porn
                     </a>
                   </li>
-                  <li class="header__navigation-list-item">
-                    <a class="header__navigation-list-link" id="modal-button" href="#">
+                  <li class="navigation__list-item">
+                    <a class="navigation__list-link" id="modal-button" href="#">
                       <svg class="icon icon--arrow" width="12" height="8">
                         <use class="icon__item" href="../media/icons/sprite.svg#arrow"></use>
                       </svg>
@@ -111,14 +60,14 @@
                   </li>
                 </ul>
               </nav>
-              <select class="header__select-language js-choice" name="language">
-                <option class="header__select-item" value="english">English</option>
-                <option class="header__select-item" value="spanish">Español</option>
-                <option class="header__select-item" value="french">French</option>
-                <option class="header__select-item" value="italian">Italian</option>
+              <select class="select-language js-choice" name="language">
+                <option class="select-language__item" value="english">English</option>
+                <option class="select-language__item" value="spanish">Español</option>
+                <option class="select-language__item" value="french">French</option>
+                <option class="select-language__item" value="italian">Italian</option>
               </select>
-              <div class="header__input-wrapper">
-                <input class="header__input-search" type="text" placeholder="Search text" />
+              <div class="input-wrapper">
+                <input class="input-wrapper__input" type="text" placeholder="Search text" />
               </div>
             </div>
           </div>
@@ -172,7 +121,7 @@
             <div class="popular__top-projects-block">
               <div class="popular__list-projects popular__list-projects--left-block">
                 <div class="popular__list-title-block">
-                  <h3 class="popular__list-title">top 10 porn sites</h3>
+                  <h3 class="popular__list-title categories-title">top 10 porn sites</h3>
                 </div>
                 <div class="popular__list-description-wrapper">
                   <p class="popular__list-description">
@@ -198,6 +147,14 @@
                         </svg>
                         95%
                       </span>
+                      <div class="popular__modal">
+                        <p class="popular__modal-text">
+                          Network connecting the most famous and largest porn sites. Hundreds of channels, thousands of
+                          pornstars from young to milfs. A variety of scenes – from light porn to BDSM and hardcore.
+                          This is a real megaSite and a masterpiece of the industry of adult sites. This is the top 1 in
+                          our ratings.
+                        </p>
+                      </div>
                     </li>
                     <li>
                       <a href="#">Adult Time</a>
@@ -212,6 +169,14 @@
                         </svg>
                         95%
                       </span>
+                      <div class="popular__modal">
+                        <p class="popular__modal-text">
+                          Network connecting the most famous and largest porn sites. Hundreds of channels, thousands of
+                          pornstars from young to milfs. A variety of scenes – from light porn to BDSM and hardcore.
+                          This is a real megaSite and a masterpiece of the industry of adult sites. This is the top 1 in
+                          our ratings.
+                        </p>
+                      </div>
                     </li>
                     <li>
                       <a href="#">Adult Time</a>
@@ -226,6 +191,14 @@
                         </svg>
                         95%
                       </span>
+                      <div class="popular__modal">
+                        <p class="popular__modal-text">
+                          Network connecting the most famous and largest porn sites. Hundreds of channels, thousands of
+                          pornstars from young to milfs. A variety of scenes – from light porn to BDSM and hardcore.
+                          This is a real megaSite and a masterpiece of the industry of adult sites. This is the top 1 in
+                          our ratings.
+                        </p>
+                      </div>
                     </li>
                     <li>
                       <a href="#">Adult Time</a>
@@ -240,6 +213,14 @@
                         </svg>
                         95%
                       </span>
+                      <div class="popular__modal">
+                        <p class="popular__modal-text">
+                          Network connecting the most famous and largest porn sites. Hundreds of channels, thousands of
+                          pornstars from young to milfs. A variety of scenes – from light porn to BDSM and hardcore.
+                          This is a real megaSite and a masterpiece of the industry of adult sites. This is the top 1 in
+                          our ratings.
+                        </p>
+                      </div>
                     </li>
                     <li>
                       <a href="#">Adult Time</a>
@@ -254,6 +235,14 @@
                         </svg>
                         95%
                       </span>
+                      <div class="popular__modal">
+                        <p class="popular__modal-text">
+                          Network connecting the most famous and largest porn sites. Hundreds of channels, thousands of
+                          pornstars from young to milfs. A variety of scenes – from light porn to BDSM and hardcore.
+                          This is a real megaSite and a masterpiece of the industry of adult sites. This is the top 1 in
+                          our ratings.
+                        </p>
+                      </div>
                     </li>
                     <li>
                       <a href="#">Adult Time</a>
@@ -268,6 +257,14 @@
                         </svg>
                         95%
                       </span>
+                      <div class="popular__modal">
+                        <p class="popular__modal-text">
+                          Network connecting the most famous and largest porn sites. Hundreds of channels, thousands of
+                          pornstars from young to milfs. A variety of scenes – from light porn to BDSM and hardcore.
+                          This is a real megaSite and a masterpiece of the industry of adult sites. This is the top 1 in
+                          our ratings.
+                        </p>
+                      </div>
                     </li>
                     <li>
                       <a href="#">Adult Time</a>
@@ -282,6 +279,14 @@
                         </svg>
                         95%
                       </span>
+                      <div class="popular__modal">
+                        <p class="popular__modal-text">
+                          Network connecting the most famous and largest porn sites. Hundreds of channels, thousands of
+                          pornstars from young to milfs. A variety of scenes – from light porn to BDSM and hardcore.
+                          This is a real megaSite and a masterpiece of the industry of adult sites. This is the top 1 in
+                          our ratings.
+                        </p>
+                      </div>
                     </li>
                     <li>
                       <a href="#">Adult Time</a>
@@ -296,6 +301,14 @@
                         </svg>
                         95%
                       </span>
+                      <div class="popular__modal">
+                        <p class="popular__modal-text">
+                          Network connecting the most famous and largest porn sites. Hundreds of channels, thousands of
+                          pornstars from young to milfs. A variety of scenes – from light porn to BDSM and hardcore.
+                          This is a real megaSite and a masterpiece of the industry of adult sites. This is the top 1 in
+                          our ratings.
+                        </p>
+                      </div>
                     </li>
                     <li>
                       <a href="#">Adult Time</a>
@@ -310,6 +323,14 @@
                         </svg>
                         95%
                       </span>
+                      <div class="popular__modal">
+                        <p class="popular__modal-text">
+                          Network connecting the most famous and largest porn sites. Hundreds of channels, thousands of
+                          pornstars from young to milfs. A variety of scenes – from light porn to BDSM and hardcore.
+                          This is a real megaSite and a masterpiece of the industry of adult sites. This is the top 1 in
+                          our ratings.
+                        </p>
+                      </div>
                     </li>
                     <li>
                       <a href="#">Adult Time</a>
@@ -324,14 +345,23 @@
                         </svg>
                         95%
                       </span>
+                      <div class="popular__modal">
+                        <p class="popular__modal-text">
+                          Network connecting the most famous and largest porn sites. Hundreds of channels, thousands of
+                          pornstars from young to milfs. A variety of scenes – from light porn to BDSM and hardcore.
+                          This is a real megaSite and a masterpiece of the industry of adult sites. This is the top 1 in
+                          our ratings.
+                        </p>
+                      </div>
                     </li>
                   </ol>
+
                   <a class="popular__btn-more popular__btn-more--left-block" href="#">show best porn 50 sites</a>
                 </div>
               </div>
               <div class="popular__list-projects popular__list-projects--right-block">
                 <div class="popular__list-title-block">
-                  <h3 class="popular__list-title">new porn reviews</h3>
+                  <h3 class="popular__list-title categories-title">new porn reviews</h3>
                 </div>
                 <div class="popular__list-description-wrapper">
                   <p class="popular__list-description">
@@ -357,6 +387,14 @@
                         </svg>
                         95%
                       </span>
+                      <div class="popular__modal">
+                        <p class="popular__modal-text">
+                          Network connecting the most famous and largest porn sites. Hundreds of channels, thousands of
+                          pornstars from young to milfs. A variety of scenes – from light porn to BDSM and hardcore.
+                          This is a real megaSite and a masterpiece of the industry of adult sites. This is the top 1 in
+                          our ratings.
+                        </p>
+                      </div>
                     </li>
                     <li>
                       <a href="#">Adult Time</a>
@@ -371,6 +409,14 @@
                         </svg>
                         95%
                       </span>
+                      <div class="popular__modal">
+                        <p class="popular__modal-text">
+                          Network connecting the most famous and largest porn sites. Hundreds of channels, thousands of
+                          pornstars from young to milfs. A variety of scenes – from light porn to BDSM and hardcore.
+                          This is a real megaSite and a masterpiece of the industry of adult sites. This is the top 1 in
+                          our ratings.
+                        </p>
+                      </div>
                     </li>
                     <li>
                       <a href="#">Adult Time</a>
@@ -385,6 +431,14 @@
                         </svg>
                         95%
                       </span>
+                      <div class="popular__modal">
+                        <p class="popular__modal-text">
+                          Network connecting the most famous and largest porn sites. Hundreds of channels, thousands of
+                          pornstars from young to milfs. A variety of scenes – from light porn to BDSM and hardcore.
+                          This is a real megaSite and a masterpiece of the industry of adult sites. This is the top 1 in
+                          our ratings.
+                        </p>
+                      </div>
                     </li>
                     <li>
                       <a href="#">Adult Time</a>
@@ -399,6 +453,14 @@
                         </svg>
                         95%
                       </span>
+                      <div class="popular__modal">
+                        <p class="popular__modal-text">
+                          Network connecting the most famous and largest porn sites. Hundreds of channels, thousands of
+                          pornstars from young to milfs. A variety of scenes – from light porn to BDSM and hardcore.
+                          This is a real megaSite and a masterpiece of the industry of adult sites. This is the top 1 in
+                          our ratings.
+                        </p>
+                      </div>
                     </li>
                     <li>
                       <a href="#">Adult Time</a>
@@ -413,6 +475,14 @@
                         </svg>
                         95%
                       </span>
+                      <div class="popular__modal">
+                        <p class="popular__modal-text">
+                          Network connecting the most famous and largest porn sites. Hundreds of channels, thousands of
+                          pornstars from young to milfs. A variety of scenes – from light porn to BDSM and hardcore.
+                          This is a real megaSite and a masterpiece of the industry of adult sites. This is the top 1 in
+                          our ratings.
+                        </p>
+                      </div>
                     </li>
                     <li>
                       <a href="#">Adult Time</a>
@@ -427,6 +497,14 @@
                         </svg>
                         95%
                       </span>
+                      <div class="popular__modal">
+                        <p class="popular__modal-text">
+                          Network connecting the most famous and largest porn sites. Hundreds of channels, thousands of
+                          pornstars from young to milfs. A variety of scenes – from light porn to BDSM and hardcore.
+                          This is a real megaSite and a masterpiece of the industry of adult sites. This is the top 1 in
+                          our ratings.
+                        </p>
+                      </div>
                     </li>
                     <li>
                       <a href="#">Adult Time</a>
@@ -441,6 +519,14 @@
                         </svg>
                         95%
                       </span>
+                      <div class="popular__modal">
+                        <p class="popular__modal-text">
+                          Network connecting the most famous and largest porn sites. Hundreds of channels, thousands of
+                          pornstars from young to milfs. A variety of scenes – from light porn to BDSM and hardcore.
+                          This is a real megaSite and a masterpiece of the industry of adult sites. This is the top 1 in
+                          our ratings.
+                        </p>
+                      </div>
                     </li>
                     <li>
                       <a href="#">Adult Time</a>
@@ -455,6 +541,14 @@
                         </svg>
                         95%
                       </span>
+                      <div class="popular__modal">
+                        <p class="popular__modal-text">
+                          Network connecting the most famous and largest porn sites. Hundreds of channels, thousands of
+                          pornstars from young to milfs. A variety of scenes – from light porn to BDSM and hardcore.
+                          This is a real megaSite and a masterpiece of the industry of adult sites. This is the top 1 in
+                          our ratings.
+                        </p>
+                      </div>
                     </li>
                     <li>
                       <a href="#">Adult Time</a>
@@ -469,6 +563,14 @@
                         </svg>
                         95%
                       </span>
+                      <div class="popular__modal">
+                        <p class="popular__modal-text">
+                          Network connecting the most famous and largest porn sites. Hundreds of channels, thousands of
+                          pornstars from young to milfs. A variety of scenes – from light porn to BDSM and hardcore.
+                          This is a real megaSite and a masterpiece of the industry of adult sites. This is the top 1 in
+                          our ratings.
+                        </p>
+                      </div>
                     </li>
                     <li>
                       <a href="#">Adult Time</a>
@@ -483,6 +585,14 @@
                         </svg>
                         95%
                       </span>
+                      <div class="popular__modal">
+                        <p class="popular__modal-text">
+                          Network connecting the most famous and largest porn sites. Hundreds of channels, thousands of
+                          pornstars from young to milfs. A variety of scenes – from light porn to BDSM and hardcore.
+                          This is a real megaSite and a masterpiece of the industry of adult sites. This is the top 1 in
+                          our ratings.
+                        </p>
+                      </div>
                     </li>
                   </ol>
                   <a class="popular__btn-more popular__btn-more--right-block" href="#">show all new porn reviews</a>
@@ -718,21 +828,37 @@
             </div>
             <div class="footer__lists-block">
               <div class="footer__list-wrapper">
-                <p class="footer__list-title">other</p>
-                <ul class="footer__list footer__list--left">
-                  <li class="footer__list-item"><a class="footer__list-link" href="#">About PornpaySites.net</a></li>
-                  <li class="footer__list-item"><a class="footer__list-link" href="#">For Webmasters</a></li>
-                  <li class="footer__list-item"><a class="footer__list-link" href="#">2257</a></li>
-                  <li class="footer__list-item"><a class="footer__list-link" href="#">Resources</a></li>
-                  <li class="footer__list-item"><a class="footer__list-link" href="#">FAQ</a></li>
+                <p class="footer__list-title categories-title">other</p>
+                <ul class="footer__list footer__list--left categories-list">
+                  <li class="footer__list-item">
+                    <a class="footer__list-link categories-list-link" href="#">About PornpaySites.net</a>
+                  </li>
+                  <li class="footer__list-item">
+                    <a class="footer__list-link categories-list-link" href="#">For Webmasters</a>
+                  </li>
+                  <li class="footer__list-item">
+                    <a class="footer__list-link categories-list-link" href="#">2257</a>
+                  </li>
+                  <li class="footer__list-item">
+                    <a class="footer__list-link categories-list-link" href="#">Resources</a>
+                  </li>
+                  <li class="footer__list-item">
+                    <a class="footer__list-link categories-list-link" href="#">FAQ</a>
+                  </li>
                 </ul>
               </div>
               <div class="footer__list-wrapper">
-                <p class="footer__list-title">Reviews lists</p>
-                <ul class="footer__list footer__list--right">
-                  <li class="footer__list-item"><a class="footer__list-link" href="#">New reviews</a></li>
-                  <li class="footer__list-item"><a class="footer__list-link" href="#">Adult affiliate programs</a></li>
-                  <li class="footer__list-item"><a class="footer__list-link" href="#">Tags and categories</a></li>
+                <p class="footer__list-title categories-title">Reviews lists</p>
+                <ul class="footer__list footer__list--right categories-list">
+                  <li class="footer__list-item">
+                    <a class="footer__list-link categories-list-link" href="#">New reviews</a>
+                  </li>
+                  <li class="footer__list-item">
+                    <a class="footer__list-link categories-list-link" href="#">Adult affiliate programs</a>
+                  </li>
+                  <li class="footer__list-item">
+                    <a class="footer__list-link categories-list-link" href="#">Tags and categories</a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -742,317 +868,760 @@
       <dialog class="dialog">
         <div class="dialog__inner">
           <div class="dialog__grid-wrapper">
-            <div class="dialog__grid">
-              <h4 class="dialog__list-title">Most Popular Porn Sites</h4>
-              <ul class="dialog__list">
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Hardcore</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Virtual Reality</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Live Games</a></li>
+            <div class="favorite-categories">
+              <h4 class="favorite-categories__title">Most Popular Porn Sites</h4>
+              <ul class="favorite-categories__list">
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Hardcore</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Virtual Reality</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Live Games</a>
+                </li>
               </ul>
             </div>
-            <div class="dialog__grid">
-              <h4 class="dialog__list-title">Most Popular Porn Sites</h4>
-              <ul class="dialog__list">
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Hardcore</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Virtual Reality</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Live Games</a></li>
+            <div class="favorite-categories">
+              <h4 class="favorite-categories__title">Most Popular Porn Sites</h4>
+              <ul class="favorite-categories__list">
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Hardcore</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Virtual Reality</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Live Games</a>
+                </li>
               </ul>
             </div>
-            <div class="dialog__grid">
-              <h4 class="dialog__list-title">Most Popular Porn Sites</h4>
-              <ul class="dialog__list">
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Hardcore</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Virtual Reality</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Live Games</a></li>
+            <div class="favorite-categories">
+              <h4 class="favorite-categories__title">Most Popular Porn Sites</h4>
+              <ul class="favorite-categories__list">
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Hardcore</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Virtual Reality</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Live Games</a>
+                </li>
               </ul>
             </div>
-            <div class="dialog__grid">
-              <h4 class="dialog__list-title">Most Popular Porn Sites</h4>
-              <ul class="dialog__list">
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Hardcore</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Virtual Reality</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Live Games</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="dialog__grid-wrapper">
-            <div class="dialog__grid">
-              <h4 class="dialog__list-title">Amateur 📹</h4>
-              <ul class="dialog__list">
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Hardcore</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Virtual Reality</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Live Games</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Hardcore</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Virtual Reality</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Live Games</a></li>
-              </ul>
-            </div>
-            <div class="dialog__grid">
-              <h4 class="dialog__list-title">Amateur 📹</h4>
-              <ul class="dialog__list">
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Hardcore</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Virtual Reality</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Live Games</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Hardcore</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Virtual Reality</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Live Games</a></li>
-              </ul>
-            </div>
-            <div class="dialog__grid">
-              <h4 class="dialog__list-title">Amateur 📹</h4>
-              <ul class="dialog__list">
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Hardcore</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Virtual Reality</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Live Games</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Hardcore</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Virtual Reality</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Live Games</a></li>
-              </ul>
-            </div>
-            <div class="dialog__grid">
-              <h4 class="dialog__list-title">Amateur 📹</h4>
-              <ul class="dialog__list">
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Hardcore</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Virtual Reality</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Live Games</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Hardcore</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Virtual Reality</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Live Games</a></li>
+            <div class="favorite-categories">
+              <h4 class="favorite-categories__title">Most Popular Porn Sites</h4>
+              <ul class="favorite-categories__list">
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Hardcore</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Virtual Reality</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Live Games</a>
+                </li>
               </ul>
             </div>
           </div>
           <div class="dialog__grid-wrapper">
-            <div class="dialog__grid">
-              <h4 class="dialog__list-title">By Age ❤️</h4>
-              <ul class="dialog__list">
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Hardcore</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Virtual Reality</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Live Games</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Hardcore</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Virtual Reality</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Live Games</a></li>
+            <div class="favorite-categories">
+              <h4 class="favorite-categories__title">Amateur 📹</h4>
+              <ul class="favorite-categories__list">
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Hardcore</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Virtual Reality</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Live Games</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Hardcore</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Virtual Reality</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Live Games</a>
+                </li>
               </ul>
             </div>
-            <div class="dialog__grid">
-              <h4 class="dialog__list-title">By Age ❤️</h4>
-              <ul class="dialog__list">
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Hardcore</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Virtual Reality</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Live Games</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Hardcore</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Virtual Reality</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Live Games</a></li>
+            <div class="favorite-categories">
+              <h4 class="favorite-categories__title">Amateur 📹</h4>
+              <ul class="favorite-categories__list">
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Hardcore</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Virtual Reality</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Live Games</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Hardcore</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Virtual Reality</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Live Games</a>
+                </li>
               </ul>
             </div>
-            <div class="dialog__grid">
-              <h4 class="dialog__list-title">By Age ❤️</h4>
-              <ul class="dialog__list">
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Hardcore</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Virtual Reality</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Live Games</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Hardcore</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Virtual Reality</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Live Games</a></li>
+            <div class="favorite-categories">
+              <h4 class="favorite-categories__title">Amateur 📹</h4>
+              <ul class="favorite-categories__list">
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Hardcore</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Virtual Reality</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Live Games</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Hardcore</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Virtual Reality</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Live Games</a>
+                </li>
               </ul>
             </div>
-            <div class="dialog__grid">
-              <h4 class="dialog__list-title">By Age ❤️</h4>
-              <ul class="dialog__list">
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Hardcore</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Virtual Reality</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Live Games</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Hardcore</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Virtual Reality</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Live Games</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="dialog__grid-wrapper">
-            <div class="dialog__grid">
-              <h4 class="dialog__list-title">Amateur 📹</h4>
-              <ul class="dialog__list">
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Hardcore</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Virtual Reality</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Live Games</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Hardcore</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Virtual Reality</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Live Games</a></li>
-              </ul>
-            </div>
-            <div class="dialog__grid">
-              <h4 class="dialog__list-title">Amateur 📹</h4>
-              <ul class="dialog__list">
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Hardcore</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Virtual Reality</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Live Games</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Hardcore</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Virtual Reality</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Live Games</a></li>
-              </ul>
-            </div>
-            <div class="dialog__grid">
-              <h4 class="dialog__list-title">Amateur 📹</h4>
-              <ul class="dialog__list">
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Hardcore</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Virtual Reality</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Live Games</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Hardcore</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Virtual Reality</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Live Games</a></li>
-              </ul>
-            </div>
-            <div class="dialog__grid">
-              <h4 class="dialog__list-title">Amateur 📹</h4>
-              <ul class="dialog__list">
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Hardcore</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Virtual Reality</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Live Games</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Hardcore</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Virtual Reality</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Live Games</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="dialog__grid-wrapper">
-            <div class="dialog__grid">
-              <h4 class="dialog__list-title">By Age ❤️</h4>
-              <ul class="dialog__list">
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Hardcore</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Virtual Reality</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Live Games</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Hardcore</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Virtual Reality</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Live Games</a></li>
-              </ul>
-            </div>
-            <div class="dialog__grid">
-              <h4 class="dialog__list-title">By Age ❤️</h4>
-              <ul class="dialog__list">
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Hardcore</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Virtual Reality</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Live Games</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Hardcore</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Virtual Reality</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Live Games</a></li>
-              </ul>
-            </div>
-            <div class="dialog__grid">
-              <h4 class="dialog__list-title">By Age ❤️</h4>
-              <ul class="dialog__list">
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Hardcore</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Virtual Reality</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Live Games</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Hardcore</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Virtual Reality</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Live Games</a></li>
-              </ul>
-            </div>
-            <div class="dialog__grid">
-              <h4 class="dialog__list-title">By Age ❤️</h4>
-              <ul class="dialog__list">
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Hardcore</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Virtual Reality</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Live Games</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Hardcore</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Virtual Reality</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Live Games</a></li>
+            <div class="favorite-categories">
+              <h4 class="favorite-categories__title">Amateur 📹</h4>
+              <ul class="favorite-categories__list">
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Hardcore</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Virtual Reality</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Live Games</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Hardcore</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Virtual Reality</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Live Games</a>
+                </li>
               </ul>
             </div>
           </div>
           <div class="dialog__grid-wrapper">
-            <div class="dialog__grid">
-              <h4 class="dialog__list-title">Amateur 📹</h4>
-              <ul class="dialog__list">
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Hardcore</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Virtual Reality</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Live Games</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Hardcore</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Virtual Reality</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Live Games</a></li>
+            <div class="favorite-categories">
+              <h4 class="favorite-categories__title">By Age ❤️</h4>
+              <ul class="favorite-categories__list">
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Hardcore</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Virtual Reality</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Live Games</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Hardcore</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Virtual Reality</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Live Games</a>
+                </li>
               </ul>
             </div>
-            <div class="dialog__grid">
-              <h4 class="dialog__list-title">Amateur 📹</h4>
-              <ul class="dialog__list">
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Hardcore</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Virtual Reality</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Live Games</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Hardcore</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Virtual Reality</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Live Games</a></li>
+            <div class="favorite-categories">
+              <h4 class="favorite-categories__title">By Age ❤️</h4>
+              <ul class="favorite-categories__list">
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Hardcore</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Virtual Reality</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Live Games</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Hardcore</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Virtual Reality</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Live Games</a>
+                </li>
               </ul>
             </div>
-            <div class="dialog__grid">
-              <h4 class="dialog__list-title">Amateur 📹</h4>
-              <ul class="dialog__list">
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Hardcore</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Virtual Reality</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Live Games</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Hardcore</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Virtual Reality</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Live Games</a></li>
+            <div class="favorite-categories">
+              <h4 class="favorite-categories__title">By Age ❤️</h4>
+              <ul class="favorite-categories__list">
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Hardcore</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Virtual Reality</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Live Games</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Hardcore</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Virtual Reality</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Live Games</a>
+                </li>
               </ul>
             </div>
-            <div class="dialog__grid">
-              <h4 class="dialog__list-title">Amateur 📹</h4>
-              <ul class="dialog__list">
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Hardcore</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Virtual Reality</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Live Games</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Hardcore</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Virtual Reality</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Live Games</a></li>
+            <div class="favorite-categories">
+              <h4 class="favorite-categories__title">By Age ❤️</h4>
+              <ul class="favorite-categories__list">
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Hardcore</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Virtual Reality</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Live Games</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Hardcore</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Virtual Reality</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Live Games</a>
+                </li>
               </ul>
             </div>
           </div>
           <div class="dialog__grid-wrapper">
-            <div class="dialog__grid">
-              <h4 class="dialog__list-title">By Age ❤️</h4>
-              <ul class="dialog__list">
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Hardcore</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Virtual Reality</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Live Games</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Hardcore</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Virtual Reality</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Live Games</a></li>
+            <div class="favorite-categories">
+              <h4 class="favorite-categories__title">Amateur 📹</h4>
+              <ul class="favorite-categories__list">
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Hardcore</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Virtual Reality</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Live Games</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Hardcore</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Virtual Reality</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Live Games</a>
+                </li>
               </ul>
             </div>
-            <div class="dialog__grid">
-              <h4 class="dialog__list-title">By Age ❤️</h4>
-              <ul class="dialog__list">
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Hardcore</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Virtual Reality</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Live Games</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Hardcore</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Virtual Reality</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Live Games</a></li>
+            <div class="favorite-categories">
+              <h4 class="favorite-categories__title">Amateur 📹</h4>
+              <ul class="favorite-categories__list">
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Hardcore</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Virtual Reality</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Live Games</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Hardcore</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Virtual Reality</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Live Games</a>
+                </li>
               </ul>
             </div>
-            <div class="dialog__grid">
-              <h4 class="dialog__list-title">By Age ❤️</h4>
-              <ul class="dialog__list">
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Hardcore</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Virtual Reality</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Live Games</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Hardcore</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Virtual Reality</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Live Games</a></li>
+            <div class="favorite-categories">
+              <h4 class="favorite-categories__title">Amateur 📹</h4>
+              <ul class="favorite-categories__list">
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Hardcore</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Virtual Reality</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Live Games</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Hardcore</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Virtual Reality</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Live Games</a>
+                </li>
               </ul>
             </div>
-            <div class="dialog__grid">
-              <h4 class="dialog__list-title">By Age ❤️</h4>
-              <ul class="dialog__list">
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Hardcore</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Virtual Reality</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Live Games</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Hardcore</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Virtual Reality</a></li>
-                <li class="dialog__list-item"><a class="dialog__list-link" href="#">Live Games</a></li>
+            <div class="favorite-categories">
+              <h4 class="favorite-categories__title">Amateur 📹</h4>
+              <ul class="favorite-categories__list">
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Hardcore</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Virtual Reality</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Live Games</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Hardcore</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Virtual Reality</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Live Games</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="dialog__grid-wrapper">
+            <div class="favorite-categories">
+              <h4 class="favorite-categories__title">By Age ❤️</h4>
+              <ul class="favorite-categories__list">
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Hardcore</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Virtual Reality</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Live Games</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Hardcore</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Virtual Reality</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Live Games</a>
+                </li>
+              </ul>
+            </div>
+            <div class="favorite-categories">
+              <h4 class="favorite-categories__title">By Age ❤️</h4>
+              <ul class="favorite-categories__list">
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Hardcore</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Virtual Reality</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Live Games</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Hardcore</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Virtual Reality</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Live Games</a>
+                </li>
+              </ul>
+            </div>
+            <div class="favorite-categories">
+              <h4 class="favorite-categories__title">By Age ❤️</h4>
+              <ul class="favorite-categories__list">
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Hardcore</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Virtual Reality</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Live Games</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Hardcore</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Virtual Reality</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Live Games</a>
+                </li>
+              </ul>
+            </div>
+            <div class="favorite-categories">
+              <h4 class="favorite-categories__title">By Age ❤️</h4>
+              <ul class="favorite-categories__list">
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Hardcore</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Virtual Reality</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Live Games</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Hardcore</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Virtual Reality</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Live Games</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="dialog__grid-wrapper">
+            <div class="favorite-categories">
+              <h4 class="favorite-categories__title">Amateur 📹</h4>
+              <ul class="favorite-categories__list">
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Hardcore</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Virtual Reality</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Live Games</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Hardcore</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Virtual Reality</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Live Games</a>
+                </li>
+              </ul>
+            </div>
+            <div class="favorite-categories">
+              <h4 class="favorite-categories__title">Amateur 📹</h4>
+              <ul class="favorite-categories__list">
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Hardcore</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Virtual Reality</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Live Games</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Hardcore</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Virtual Reality</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Live Games</a>
+                </li>
+              </ul>
+            </div>
+            <div class="favorite-categories">
+              <h4 class="favorite-categories__title">Amateur 📹</h4>
+              <ul class="favorite-categories__list">
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Hardcore</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Virtual Reality</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Live Games</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Hardcore</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Virtual Reality</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Live Games</a>
+                </li>
+              </ul>
+            </div>
+            <div class="favorite-categories">
+              <h4 class="favorite-categories__title">Amateur 📹</h4>
+              <ul class="favorite-categories__list">
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Hardcore</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Virtual Reality</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Live Games</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Hardcore</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Virtual Reality</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Live Games</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="dialog__grid-wrapper">
+            <div class="favorite-categories">
+              <h4 class="favorite-categories__title">By Age ❤️</h4>
+              <ul class="favorite-categories__list">
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Hardcore</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Virtual Reality</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Live Games</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Hardcore</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Virtual Reality</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Live Games</a>
+                </li>
+              </ul>
+            </div>
+            <div class="favorite-categories">
+              <h4 class="favorite-categories__title">By Age ❤️</h4>
+              <ul class="favorite-categories__list">
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Hardcore</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Virtual Reality</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Live Games</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Hardcore</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Virtual Reality</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Live Games</a>
+                </li>
+              </ul>
+            </div>
+            <div class="favorite-categories">
+              <h4 class="favorite-categories__title">By Age ❤️</h4>
+              <ul class="favorite-categories__list">
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Hardcore</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Virtual Reality</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Live Games</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Hardcore</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Virtual Reality</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Live Games</a>
+                </li>
+              </ul>
+            </div>
+            <div class="favorite-categories">
+              <h4 class="favorite-categories__title">By Age ❤️</h4>
+              <ul class="favorite-categories__list">
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Hardcore</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Virtual Reality</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Live Games</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Hardcore</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Virtual Reality</a>
+                </li>
+                <li class="favorite-categories__list-item">
+                  <a class="favorite-categories__list-link" href="#">Live Games</a>
+                </li>
               </ul>
             </div>
           </div>
         </div>
       </dialog>
+      <div class="burger-menu">
+        <div class="burger-menu__wrapper">
+          <div class="burger-menu__header">
+            <div class="burger-menu__btn-wrapper">
+              <button class="burger-btn burger-btn--close" type="button">
+                <span class="visually-hidden">Open menu</span>
+              </button>
+            </div>
+            <div class="logo">
+              <a class="logo__link" href="#">
+                <svg class="icon icon--logo" width="98" height="31">
+                  <use class="icon__inner" href="../media/icons/sprite.svg#logo"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="burger-menu__content">
+            <div class="burger-menu__content-wrapper">
+              <div class="burger-menu__categories">
+                <div class="favorite-categories">
+                  <h4 class="favorite-categories__title">Most Popular Porn Sites</h4>
+                  <ul class="favorite-categories__list">
+                    <li class="favorite-categories__list-item">
+                      <a class="favorite-categories__list-link" href="#">Hardcore</a>
+                    </li>
+                    <li class="favorite-categories__list-item">
+                      <a class="favorite-categories__list-link" href="#">Virtual Reality</a>
+                    </li>
+                    <li class="favorite-categories__list-item">
+                      <a class="favorite-categories__list-link" href="#">Live Games</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="favorite-categories">
+                  <h4 class="favorite-categories__title">Amateur 📹</h4>
+                  <ul class="favorite-categories__list">
+                    <li class="favorite-categories__list-item">
+                      <a class="favorite-categories__list-link" href="#">Hardcore</a>
+                    </li>
+                    <li class="favorite-categories__list-item">
+                      <a class="favorite-categories__list-link" href="#">Virtual Reality</a>
+                    </li>
+                    <li class="favorite-categories__list-item">
+                      <a class="favorite-categories__list-link" href="#">Live Games</a>
+                    </li>
+                    <li class="favorite-categories__list-item">
+                      <a class="favorite-categories__list-link" href="#">Hardcore</a>
+                    </li>
+                    <li class="favorite-categories__list-item">
+                      <a class="favorite-categories__list-link" href="#">Virtual Reality</a>
+                    </li>
+                    <li class="favorite-categories__list-item">
+                      <a class="favorite-categories__list-link" href="#">Live Games</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="favorite-categories">
+                  <h4 class="favorite-categories__title">By Age ❤️</h4>
+                  <ul class="favorite-categories__list">
+                    <li class="favorite-categories__list-item">
+                      <a class="favorite-categories__list-link" href="#">Hardcore</a>
+                    </li>
+                    <li class="favorite-categories__list-item">
+                      <a class="favorite-categories__list-link" href="#">Virtual Reality</a>
+                    </li>
+                    <li class="favorite-categories__list-item">
+                      <a class="favorite-categories__list-link" href="#">Live Games</a>
+                    </li>
+                    <li class="favorite-categories__list-item">
+                      <a class="favorite-categories__list-link" href="#">Hardcore</a>
+                    </li>
+                    <li class="favorite-categories__list-item">
+                      <a class="favorite-categories__list-link" href="#">Virtual Reality</a>
+                    </li>
+                    <li class="favorite-categories__list-item">
+                      <a class="favorite-categories__list-link" href="#">Live Games</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="burger-menu__wrapper-nav">
+                <nav class="navigation">
+                  <ul class="navigation__list">
+                    <li class="navigation__list-item">
+                      <a class="navigation__list-link" href="#">
+                        <svg class="icon icon--raitings" width="21" height="21">
+                          <use class="icon__item" href="../media/icons/sprite.svg#raitings"></use>
+                        </svg>
+                        top rated
+                      </a>
+                    </li>
+                    <li class="navigation__list-item">
+                      <a class="navigation__list-link" href="#">
+                        <svg class="icon icon--new" width="16" height="16">
+                          <use class="icon__item" href="../media/icons/sprite.svg#new"></use>
+                        </svg>
+                        new reviews
+                      </a>
+                    </li>
+                    <li class="navigation__list-item">
+                      <a class="navigation__list-link" href="#">
+                        <svg class="icon icon--discount" width="17" height="14">
+                          <use class="icon__item" href="../media/icons/sprite.svg#discount"></use>
+                        </svg>
+                        discount porn
+                      </a>
+                    </li>
+                    <li class="navigation__list-item">
+                      <a class="navigation__list-link" href="#">
+                        <svg class="icon icon--arrow" width="12" height="8">
+                          <use class="icon__item" href="../media/icons/sprite.svg#arrow"></use>
+                        </svg>
+                        categories
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                <select class="select-language js-choice" name="language">
+                  <option class="select-language__item" value="english">English</option>
+                  <option class="select-language__item" value="spanish">Español</option>
+                  <option class="select-language__item" value="french">French</option>
+                  <option class="select-language__item" value="italian">Italian</option>
+                </select>
+                <div class="input-wrapper">
+                  <input class="input-wrapper__input" type="text" placeholder="Search text" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="../js/choices.min.js"></script>
     <script src="../js/main.js"></script>

@@ -15,13 +15,13 @@
   }
 
   &__info-question {
+    display: flex;
+    justify-content: space-between;
     margin-block-end: 5px;
     color: var(--question-text-color);
     font-weight: 500;
     font-size: 13px;
     font-family: var(--font-base-alt);
-    display: flex;
-    justify-content: space-between;
 
     @include mobile {
       margin-block-end: 0;
@@ -30,10 +30,10 @@
 
   &__info-button {
     display: none;
-    
+
     @include mobile {
-      border: none;
       display: block;
+      border: none;
       background: none;
     }
   }
@@ -160,6 +160,25 @@
     padding: 0 8px 8px;
   }
 
+  &__modal {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: -14px;
+    border-radius: var(--br-text-blocks);
+    background: var(--light-color);
+    padding: 14px 23px 7px 14px;
+    inline-size: 100%;
+    inline-size: calc(100% + 30px);
+    max-inline-size: 774px;
+    min-block-size: 70px;
+    user-select: none;
+
+    @include desktop {
+      display: none !important; 
+    }
+  }
+
   &__list {
     counter-reset: custom-counter;
     margin-block-end: 10px;
@@ -170,7 +189,7 @@
     display: flex;
     position: relative;
     column-gap: 5px;
-    align-items: baseline;
+    align-items: center;
     counter-increment: custom-counter;
     border-block-end: var(--border-gray);
     padding: 10px 0 3px 13px;
@@ -180,6 +199,7 @@
 
       color: var(--dark-color-text);
       font-weight: 900;
+      font-size: 14px;
     }
 
     &::after {
@@ -191,14 +211,25 @@
 
       @include square(9px);
     }
+
+    @include hover {
+      .popular__modal {
+        display: block;
+      }
+    }
   }
 
   &__list li span > a {
     display: none;
+    block-size: 16px;
 
     @include mobile {
       display: inline-block;
     }
+  }
+
+  &__list li:hover span > a {
+    display: inline-block;
   }
 
   &__list a {
@@ -219,6 +250,7 @@
   &__list span {
     display: flex;
     column-gap: 5px;
+    align-items: center;
     margin-inline-start: auto;
     padding-inline-end: 5px;
   }

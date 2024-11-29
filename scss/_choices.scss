@@ -29,7 +29,7 @@ $choices-z-index: 1 !default;
   position: relative;
   width: 100%;
   max-width: 172px;
-  max-height: 28px;
+  max-height: 30px;
   overflow: hidden;
   font-size: $choices-font-size-lg;
 
@@ -166,12 +166,12 @@ $choices-z-index: 1 !default;
 .#{$choices-selector}__inner {
   display: inline-block;
   vertical-align: top;
-  border: 1px solid $choices-keyline-color;
+  // border: 1px solid $choices-keyline-color;
   border-radius: $choices-border-radius;
   background-color: $choices-bg-color;
   padding: 5px 5px 5px 5px;
   width: 100%;
-  min-height: 28px;
+  height: 30px;
   overflow: hidden;
   font-size: $choices-font-size-md;
 
@@ -257,12 +257,11 @@ $choices-z-index: 1 !default;
 %choices-dropdown {
   display: none;
   position: absolute;
-  top: 100%;
+  top: 120%;
   z-index: $choices-z-index;
   margin-top: -1px;
-  border: 1px solid $choices-keyline-color;
-  border-bottom-right-radius: $choices-border-radius;
-  border-bottom-left-radius: $choices-border-radius;
+  border: 1px solid transparent !important;
+  border-radius: 6px;
   background-color: $choices-bg-color-dropdown;
   width: 100%;
   overflow: hidden;
