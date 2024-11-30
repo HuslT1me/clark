@@ -1,0 +1,18 @@
+.top {
+  margin-block-end: 12px;
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px 19px;
+
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+
+    @include mobile {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}

@@ -50,18 +50,18 @@
     bottom: 0;
   }
 
-  .header__burger-block.is-open &__burger-item--one {
+  &__burger-block.is-open &__burger-item--one {
     transform-origin: 5%;
     rotate: 45deg;
     inline-size: 22px;
   }
 
-  .header__burger-block.is-open &__burger-item--two {
+  &__burger-block.is-open &__burger-item--two {
     transform: translateX(-40px);
     background-color: transparent;
   }
 
-  .header__burger-block.is-open &__burger-item--three {
+  &__burger-block.is-open &__burger-item--three {
     transform: rotate(-45deg);
     transform-origin: 5%;
     inline-size: 22px;

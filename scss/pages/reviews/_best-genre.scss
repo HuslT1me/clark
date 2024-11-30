@@ -1,0 +1,51 @@
+.best-genre {
+  margin-block-end: 23px;
+
+  &__content-wrapper {
+    border-radius: var(--br-text-blocks);
+    background: var(--light-color);
+    padding: 30px;
+
+    @include mobile {
+      padding: 10px;
+    }
+
+    .grid-line {
+      display: none;
+
+      @include mobile {
+        display: flex;
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    column-gap: 36px;
+    justify-content: space-between;
+
+    @include mobile {
+      row-gap: 20px;
+      flex-direction: column;
+      min-block-size: 0;
+    }
+  }
+
+  &__cover {
+    border-radius: var(--br-input);
+    object-fit: cover;
+
+    @include mobile {
+      inline-size: 100%;
+      block-size: auto;
+    }
+  }
+
+  &__text-block {
+    @include w-full(973px);
+  }
+
+  &__text:not(:last-child) {
+    margin-block-end: 10px;
+  }
+}

@@ -37,12 +37,14 @@ function closeModalOnOverlay({ currentTarget, target }) {
 modal.addEventListener("click", closeModalOnOverlay);
 modal.addEventListener("cancel", () => closeModal());
 
-const accordionLink = document.querySelector(".popular__info-question");
-const accodionBody = document.querySelector(".popular__info-text-grid");
+const accordionLine = document.querySelector(".grid-line");
+const accodionBody = document.querySelector(".grid");
 
-accordionLink.addEventListener("click", () => {
-  accodionBody.classList.toggle("popular__info-text-grid--active");
-});
+if (accordionLine) {
+  accordionLine.addEventListener("click", () => {
+    accodionBody.classList.toggle("grid--active");
+  });
+}
 
 const burgerButtonWrapper = document.querySelector(".header__burger-block");
 const burgerWrapper = document.querySelector(".burger-menu");

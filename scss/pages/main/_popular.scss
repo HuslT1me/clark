@@ -28,35 +28,6 @@
     }
   }
 
-  &__info-button {
-    display: none;
-
-    @include mobile {
-      display: block;
-      border: none;
-      background: none;
-    }
-  }
-
-  &__info-text-grid {
-    @include mobile {
-      display: grid;
-      grid-template-rows: 0fr;
-      opacity: 0;
-      transition: all 0.4s;
-      min-block-size: 0;
-      overflow: hidden;
-    }
-  }
-
-  &__info-text-grid--active {
-    @include mobile {
-      grid-template-rows: 1fr;
-      opacity: 1;
-      padding-block-start: 5px;
-    }
-  }
-
   &__info-text-wrapper {
     display: flex;
     column-gap: 42px;
@@ -64,7 +35,7 @@
     @include mobile {
       row-gap: 20px;
       flex-direction: column;
-      min-height: 0;
+      min-block-size: 0;
     }
   }
 
