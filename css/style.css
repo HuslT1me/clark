@@ -1071,16 +1071,16 @@ h4 {
 .header__burger-item--three {
   bottom: 0;
 }
-:has(.is-open) .header__burger-item--one {
+.header__burger-block.is-open .header__burger-item--one {
   transform-origin: 5%;
   rotate: 45deg;
   inline-size: 22px;
 }
-:has(.is-open) .header__burger-item--two {
+.header__burger-block.is-open .header__burger-item--two {
   transform: translateX(-40px);
   background-color: transparent;
 }
-:has(.is-open) .header__burger-item--three {
+.header__burger-block.is-open .header__burger-item--three {
   transform: rotate(-45deg);
   transform-origin: 5%;
   inline-size: 22px;
