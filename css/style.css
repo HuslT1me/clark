@@ -713,6 +713,7 @@ h4 {
 }
 @media (max-width: 474px) {
   .section-title {
+    margin-block-end: 5px;
     text-align: center;
   }
   .section-title::before {
@@ -996,7 +997,6 @@ h4 {
 .burger-menu {
   display: block;
   position: absolute;
-  position: absolute;
   top: 42px;
   left: -100vw;
   z-index: 10;
@@ -1106,6 +1106,11 @@ h4 {
   letter-spacing: 0.5px;
   text-align: center;
 }
+@media (max-width: 767px) {
+  .site-article__cover-decor {
+    left: 0;
+  }
+}
 .site-article__cover-decor-text {
   font-size: 24px;
   line-height: 1;
@@ -1210,11 +1215,6 @@ h4 {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-}
-@media (max-width: 767px) {
-  .cover-tag {
-    display: none;
-  }
 }
 
 .cover-tag:first-child {

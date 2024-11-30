@@ -23,6 +23,7 @@
   }
 
   @include mobile-sm {
+    margin-block-end: 5px;
     text-align: center;
 
     &::before {
@@ -295,7 +296,6 @@
 .burger-menu {
   display: block;
   position: absolute;
-  position: absolute;
   top: 42px;
   left: -100vw;
   z-index: 10;
@@ -412,6 +412,10 @@
     font-family: var(--font-accent);
     letter-spacing: 0.5px;
     text-align: center;
+
+    @include mobile {
+      left: 0;
+    }
   }
 
   &__cover-decor-text {
@@ -505,10 +509,6 @@
   text-transform: uppercase;
 
   @include flex-center(true);
-
-  @include mobile {
-    display: none;
-  }
 }
 
 .cover-tag:first-child {
