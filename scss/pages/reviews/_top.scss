@@ -1,6 +1,10 @@
 .top {
   margin-block-end: 12px;
 
+  @include mobile {
+    margin-block-end: 10px;
+  }
+
   &__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

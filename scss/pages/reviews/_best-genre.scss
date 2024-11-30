@@ -1,6 +1,10 @@
 .best-genre {
   margin-block-end: 23px;
 
+  @include mobile {
+    margin-block-end: 10px;
+  }
+
   &__content-wrapper {
     border-radius: var(--br-text-blocks);
     background: var(--light-color);
