@@ -44,31 +44,37 @@ accordionLink.addEventListener("click", () => {
   accodionBody.classList.toggle("popular__info-text-grid--active");
 });
 
-const burgerButtonClose = document.querySelector(".burger-btn--close");
 const burgerButtonWrapper = document.querySelector(".header__burger-block");
 const burgerWrapper = document.querySelector(".burger-menu");
-const burgerWindow = document.querySelector(".burger-menu__wrapper");
+const burgerOverlay = document.querySelector(".burger-overlay");
 
-burgerButtonWrapper.addEventListener("click", () => openBurgerMenu());
+burgerButtonWrapper.addEventListener("click", toggleBurgerMenu);
 
 document.addEventListener("click", (e) => {
-  if (
-    e.target === burgerWrapper ||
-    e.target.closest(".burger-menu__btn-wrapper")
-  ) {
+  if (e.target === burgerOverlay) {
     closeBurgerMenu();
   }
 });
 
+function toggleBurgerMenu() {
+  if (burgerWrapper.classList.contains("burger-menu--active")) {
+    closeBurgerMenu();
+  } else {
+    openBurgerMenu();
+  }
+}
+
 function openBurgerMenu() {
+  burgerOverlay.classList.add("burger-overlay--active");
+  burgerButtonWrapper.classList.add("is-open");
   burgerWrapper.classList.add("burger-menu--active");
-  burgerWindow.classList.add("burger-menu__wrapper--active");
   document.body.style.overflow = "hidden";
 }
 
 function closeBurgerMenu() {
+  burgerOverlay.classList.remove("burger-overlay--active");
+  burgerButtonWrapper.classList.remove("is-open");
   burgerWrapper.classList.remove("burger-menu--active");
-  burgerWindow.classList.remove("burger-menu__wrapper--active");
   document.body.style.overflow = "";
 }
 

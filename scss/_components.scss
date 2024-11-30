@@ -237,29 +237,32 @@
   }
 }
 
-.burger-menu {
+.burger-overlay {
   display: none;
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 0;
-  transition: var(--transition-duration);
-  transition-behavior: allow-discrete;
   background: #36333387;
   inline-size: 100%;
   block-size: 100vh;
+}
 
-  &__wrapper {
-    position: absolute;
-    top: 0;
-    left: -100vw;
-    z-index: 10;
-    transition: var(--transition-duration);
-    inline-size: 100%;
-    max-inline-size: 251px;
-    block-size: 100%;
-    content: '';
-  }
+.burger-overlay--active {
+  display: block;
+}
+
+.burger-menu {
+  display: block;
+  position: absolute;
+  position: absolute;
+  top: 42px;
+  left: -100vw;
+  z-index: 10;
+  transition: var(--transition-duration);
+  inline-size: 100%;
+  max-inline-size: 251px;
+  block-size: 100%;
+  content: '';
 
   &__header {
     display: flex;
@@ -268,15 +271,6 @@
     background: var(--dark-color);
     padding-inline-start: 10px;
     min-block-size: 42px;
-  }
-
-  &__btn-wrapper {
-    padding-block: 10px;
-  }
-
-  &__wrapper--active {
-    left: 0;
-    transition: var(--transition-duration);
   }
 
   &__content {
@@ -327,60 +321,7 @@
 }
 
 .burger-menu--active {
-  display: block;
-  opacity: 1;
-
-  @starting-style {
-    opacity: 0;
-  }
-}
-
-.burger-btn {
-  display: flex;
-  position: relative;
-  transition: all 0.4s ease;
-  border: none;
-  background: var(--burger-button);
-  padding-inline-start: 0;
-  inline-size: 20px;
-  block-size: 2px;
-
-  &::before,
-  &::after {
-    position: absolute;
-    transition: all 0.4s ease;
-    background: var(--burger-button);
-    inline-size: 20px;
-    block-size: 2px;
-    content: '';
-  }
-
-  &::before {
-    translate: 0 -7px;
-
-    @include mobile {
-      translate: 0 -5px;
-    }
-  }
-
-  &::after {
-    translate: 0 5px;
-  }
-}
-
-.burger-btn--close {
-  translate: -35px 0;
-  background: transparent;
-
-  &::before {
-    translate: 35px 0;
-    rotate: 45deg;
-  }
-
-  &::after {
-    translate: 35px 0;
-    rotate: -45deg;
-  }
+  left: 0;
 }
 
 .choices {
