@@ -1,5 +1,5 @@
 .preview {
-  margin-block-end: 15px;
+  margin-block-end: var(--margin-section);
 
   &__inner {
     display: flex;
@@ -128,6 +128,7 @@
     border-radius: 11px;
     inline-size: 100%;
     min-block-size: 157px;
+    background: var(--price-bg);
 
     @include tablet {
       column-gap: 20px;
@@ -156,6 +157,7 @@
     font-size: 15px;
     line-height: 1;
     font-family: var(--font-rest);
+    text-decoration: none;
 
     &::before {
       position: absolute;
