@@ -26,6 +26,11 @@
     }
   }
 
+  &__article-wrapper {
+    background: url(../media/grad.png) center/cover no-repeat;
+    
+  }
+
   &__categories-link {
     flex-direction: column;
     transition: var(--transition-duration);

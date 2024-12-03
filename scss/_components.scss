@@ -88,10 +88,8 @@
       justify-content: start;
       padding-inline: 0;
       color: var(--burger-text);
-    }
-
-    @include tablet {
       padding-inline-start: 22px;
+
     }
 
     @include hover {
@@ -114,7 +112,7 @@
     .icon {
       fill: var(--accent-color);
 
-      @include tablet {
+      @include desktop {
         display: none;
       }
     }

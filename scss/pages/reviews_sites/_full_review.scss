@@ -51,6 +51,16 @@
     align-items: baseline;
 
     &::before {
+      background: url(../media/icons/scales.svg) center/contain no-repeat;
+      inline-size: 18px;
+      block-size: 15px;
+    }
+  }
+
+  &__list-title--score {
+    align-items: baseline;
+
+    &::before {
       background: url(../media/icons/red-procent.svg) center/contain no-repeat;
       inline-size: 13px;
       block-size: 13px;

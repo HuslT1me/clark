@@ -797,10 +797,6 @@ h4 {
     justify-content: start;
     padding-inline: 0;
     color: var(--burger-text);
-  }
-}
-@media (max-width: 1023px) {
-  .navigation__list-link {
     padding-inline-start: 22px;
   }
 }
@@ -841,7 +837,7 @@ h4 {
 .navigation__list-link .icon {
   fill: var(--accent-color);
 }
-@media (max-width: 1023px) {
+@media (max-width: 1280px) {
   .navigation__list-link .icon {
     display: none;
   }
@@ -2073,6 +2069,9 @@ h4 {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+.categories__article-wrapper {
+  background: url(../media/grad.png) center/cover no-repeat;
+}
 .categories__categories-link {
   flex-direction: column;
   transition: var(--transition-duration);
@@ -2574,6 +2573,14 @@ h4 {
 .full_review__list-title::before {
   display: block;
   content: "";
+}
+.full_review__list-title--score {
+  align-items: baseline;
+}
+.full_review__list-title--score::before {
+  background: url(../media/icons/scales.svg) center/contain no-repeat;
+  inline-size: 18px;
+  block-size: 15px;
 }
 .full_review__list-title--score {
   align-items: baseline;
