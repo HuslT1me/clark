@@ -1,9 +1,5 @@
 .top {
-  margin-block-end: 12px;
-
-  @include mobile {
-    margin-block-end: 10px;
-  }
+  margin-block-end: var(--margin-section);
 
   &__list {
     display: grid;

@@ -1,5 +1,5 @@
 .categories {
-  margin-block-end: 35px;
+  margin-block-end: var(--margin-section);
 
   &__description-block {
     margin-block-end: 12px;
@@ -29,6 +29,7 @@
   &__categories-link {
     flex-direction: column;
     transition: var(--transition-duration);
+    box-shadow: 4px 6px 11.8px 0px #00000042;
     border: 1px solid transparent;
     border-radius: var(--br-previews);
     background: url(../media/previews/girl.jpg) center/cover no-repeat;
@@ -38,7 +39,7 @@
     @include hover {
       border-color: var(--alt-accent-color);
 
-      & > p {
+      .categories__text-block > p {
         transition: var(--transition-duration);
         color: var(--pink-hover);
       }

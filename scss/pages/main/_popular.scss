@@ -1,5 +1,5 @@
 .popular {
-  margin-block-end: 18px;
+  margin-block-end: var(--margin-section);
 
   &__info-block {
     display: grid;
@@ -91,27 +91,39 @@
     text-transform: uppercase;
   }
 
-  &__list-projects--left-block .popular__list-title {
-    &::before {
-      display: block;
-      top: 0;
-      left: 0;
-      background: url(../media/icons/badge.svg) center/contain no-repeat;
-      inline-size: 15px;
-      block-size: 21px;
-      content: '';
+  &__list-projects--left-block {
+    .popular__list-title {
+      &::before {
+        display: block;
+        top: 0;
+        left: 0;
+        background: url(../media/icons/badge.svg) center/contain no-repeat;
+        inline-size: 15px;
+        block-size: 21px;
+        content: '';
+      }
+    }
+
+    .popular__modal {
+      border-color: var(--accent-color);
     }
   }
 
-  &__list-projects--right-block .popular__list-title {
-    &::before {
-      display: block;
-      top: 0;
-      left: 0;
-      background: url(../media/icons/new.svg) center/contain no-repeat;
-      inline-size: 18px;
-      block-size: 18px;
-      content: '';
+  &__list-projects--right-block {
+    .popular__list-title {
+      &::before {
+        display: block;
+        top: 0;
+        left: 0;
+        background: url(../media/icons/new.svg) center/contain no-repeat;
+        inline-size: 18px;
+        block-size: 18px;
+        content: '';
+      }
+    }
+
+    .popular__modal {
+      border-color: var(--alt-accent-color);
     }
   }
 
@@ -129,7 +141,7 @@
 
   &__list-wrapper {
     background: var(--light-gray);
-    padding: 0 8px 8px;
+    padding-block-end: 8px;
   }
 
   &__modal {
@@ -138,6 +150,7 @@
     bottom: 100%;
     left: -14px;
     box-shadow: 3px 4px 14.2px -1px #00000026;
+    border: 1px solid;
     border-radius: var(--br-text-blocks);
     background: var(--light-color);
     padding: 14px 23px 7px 14px;
@@ -161,11 +174,10 @@
   &__list li {
     display: flex;
     position: relative;
-    column-gap: 5px;
     align-items: center;
     counter-increment: custom-counter;
     border-block-end: var(--border-gray);
-    padding: 10px 0 3px 13px;
+    padding: 10px 0 3px 19px;
 
     &::before {
       content: counter(custom-counter);
@@ -178,43 +190,81 @@
     &::after {
       position: absolute;
       top: calc(50% - 1px);
-      left: 0;
+      left: 8px;
       background: url(../media/icons/red-arrow.svg) center/contain no-repeat;
       content: '';
 
       @include square(9px);
     }
-  }
 
-  &__list li span > a {
-    display: none;
-    block-size: 16px;
+    @include hover {
+      transition: var(--transition-duration);
 
-    @include mobile {
-      display: inline-block;
+      &::before {
+        color: var(--light-color);
+      }
+
+      &::after {
+        background: url(../media/icons/white-arrow.svg) center/contain no-repeat;
+      }
+
+      a {
+        color: var(--light-color) !important;
+      }
+
+      .popular__site-data {
+        color: var(--light-color);
+      }
+
+      .popular__site-data > a {
+        display: inline-block;
+      }
+
+      .icon--procent,
+      .icon--link {
+        color: var(--light-color);
+      }
+
+      .popular__modal {
+        display: block;
+      }
+    }
+
+    .popular__site-data > a {
+      display: none;
+      block-size: 16px;
+
+      @include mobile {
+        display: inline-block;
+      }
     }
   }
 
-  &__list li:hover span > a {
-    display: inline-block;
+  &__list-projects--left-block &__list li {
+    @include hover {
+      background: var(--accent-color);
+    }
+  }
+
+  &__list-projects--right-block &__list li {
+    @include hover {
+      background: var(--alt-accent-color);
+    }
+  }
+
+  &__list-item-container {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 8px;
+    inline-size: 100%;
   }
 
   &__list a {
     color: var(--dark-color-text);
     font-size: 14px;
-
-    @include hover {
-      transition: var(--transition-duration);
-      color: var(--alt-accent-color);
-    }
   }
 
-  &__list li:has(a:hover)::before {
-    transition: var(--transition-duration);
-    color: var(--alt-accent-color);
-  }
-
-  &__list span {
+  &__site-data {
     display: flex;
     column-gap: 5px;
     align-items: center;
@@ -224,6 +274,7 @@
 
   &__btn-more {
     transition: var(--transition-duration);
+    margin-inline: 8px;
     border: 1px solid;
     border-radius: var(--br-button);
     background: var(--light-button);

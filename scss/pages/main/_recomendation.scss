@@ -1,9 +1,5 @@
 .recomendations {
-  margin-block-end: 90px;
-
-  @include mobile {
-    margin-block-end: 16px;
-  }
+  margin-block-end: var(--margin-section);
 
   &__content {
     border-radius: var(--br-text-blocks);
@@ -38,10 +34,10 @@
   &__cover-block {
     margin-block-end: 5px;
     box-shadow: var(--site-preview-shadow);
+    border: 1px solid transparent;
     border-radius: 5px;
     background: url(../media/previews/girl-2.jpg) center/cover no-repeat;
     min-block-size: 95px;
-    border: 1px solid transparent;
 
     @include flex-center;
     @include hover {

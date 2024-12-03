@@ -80,27 +80,16 @@ function closeBurgerMenu() {
   document.body.style.overflow = "";
 }
 
-// const listOfElements = document.querySelectorAll(".popular__list");
-// const divModal = `<div class="popular__modal">
-//       <p class="popular__modal-text">
-//         Network connecting the most famous and largest porn sites. Hundreds of channels, thousands of
-//         pornstars from young to milfs. A variety of scenes – from light porn to BDSM and hardcore. This is a
-//         real megaSite and a masterpiece of the industry of adult sites. This is the top 1 in our ratings.
-//       </p>
-//    </div>`;
+document.addEventListener('scroll', inView);
+const block = document.querySelector('.preview__button-visit-wrapper');
+const btnFixedElem = document.querySelector('.preview__button-visit--hidden');
 
-// listOfElements.forEach((item) => {
-//   const itemOfList = item.querySelectorAll("li");
-
-//   itemOfList.forEach((li) => {
-//     li.addEventListener("mouseover", () => {
-//       li.innerHTML += divModal;
-//     });
-//     li.addEventListener("mouseout", (у) => {
-//       const modalWindow = document.querySelectorAll(".popular__modal");
-//       modalWindow.forEach((item) => item.remove());
-//     });
-//   });
-// });
+function inView() {
+  if (block.getBoundingClientRect().bottom <= window.innerHeight - window.innerHeight) {
+    btnFixedElem.classList.remove('hide');
+  } else {
+    btnFixedElem.classList.add('hide');
+  }
+}
 
 multiSelect();

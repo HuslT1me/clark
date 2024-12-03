@@ -20,8 +20,13 @@
   --burger-button: #d9d9d9;
   --pink-hover: #ea3473;
   --burger-text: #515151;
-  --blue-tag: #24ABFF;
-  --orange-tag: #E89817;
+  --blue-tag: #24abff;
+  --orange-tag: #e89817;
+  --calendar-icon: #c3c3c3;
+  --price-decor-color: #dbdbdb;
+  --old-price: #a2a2a2;
+  --table-background: #f1f1f1;
+  --table-background-alt: #ebebeb;
 
   /* fonts */
   --font-base: 'Roboto', sans-serif;
@@ -44,10 +49,14 @@
   --br-input: 6px;
   --br-button: 4px;
   --br-previews: 5px;
+  --br-big-button: 9px;
 
   // border
   --border-gray: 1px solid #dbdbdb;
 
   // shadow
   --site-preview-shadow: 0px 0px 4px 0px #00000063;
+
+  // spaces
+  --margin-section: 10px;
 }

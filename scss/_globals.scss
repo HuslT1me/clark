@@ -48,6 +48,14 @@ h4 {
   }
 }
 
+.main {
+  margin-block-end: 40px;
+
+  @include mobile {
+    margin-block-end: var(--margin-section);
+  }
+}
+
 .visually-hidden {
   position: absolute !important;
   clip-path: inset(100%) !important;
@@ -63,5 +71,4 @@ h4 {
 
 .main-wrapper {
   position: relative;
-  overflow: hidden;
 }
