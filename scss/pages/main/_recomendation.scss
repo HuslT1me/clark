@@ -36,7 +36,7 @@
     box-shadow: var(--site-preview-shadow);
     border: 1px solid transparent;
     border-radius: 5px;
-    background: url(../media/previews/girl-2.jpg) center/cover no-repeat;
+    background: url(../media/previews/girl-2.webp) center/cover no-repeat;
     min-block-size: 95px;
 
     @include flex-center;
@@ -54,7 +54,7 @@
     color: var(--light-color);
     font-weight: 900;
     font-size: 20px;
-
+    text-shadow: -27px 6px 32px black;
     text-transform: uppercase;
   }
 

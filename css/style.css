@@ -236,7 +236,7 @@ svg * {
   --br-previews: 5px;
   --br-big-button: 9px;
   --border-gray: 1px solid #dbdbdb;
-  --site-preview-shadow: 0px 0px 4px 0px #00000063;
+  --site-preview-shadow: inset 0px 0px 4px 0px #00000063;
   --margin-section: 10px;
 }
 
@@ -1154,7 +1154,7 @@ h4 {
   align-items: end;
   margin-block-end: 5px;
   border-radius: var(--br-previews) var(--br-previews) 0 0;
-  background: url(../media/pages/reviews/site-article-cover.jpg) center/cover no-repeat;
+  background: url(../media/pages/reviews/site-article-cover.webp) center/cover no-repeat;
   padding-block-start: 5px;
   inline-size: 100%;
   min-block-size: 152px;
@@ -2078,7 +2078,7 @@ h4 {
   box-shadow: 4px 6px 11.8px 0px rgba(0, 0, 0, 0.2588235294);
   border: 1px solid transparent;
   border-radius: var(--br-previews);
-  background: url(../media/previews/girl.jpg) center/cover no-repeat;
+  background: url(../media/previews/girl.webp) center/cover no-repeat;
   min-block-size: 134px;
   display: flex;
   justify-content: center;
@@ -2088,7 +2088,7 @@ h4 {
   .categories__categories-link:hover {
     border-color: var(--alt-accent-color);
   }
-  .categories__categories-link:hover .categories__text-block > p {
+  .categories__categories-link:hover p {
     transition: var(--transition-duration);
     color: var(--pink-hover);
   }
@@ -2097,7 +2097,7 @@ h4 {
   .categories__categories-link:active {
     border-color: var(--alt-accent-color);
   }
-  .categories__categories-link:active .categories__text-block > p {
+  .categories__categories-link:active p {
     transition: var(--transition-duration);
     color: var(--pink-hover);
   }
@@ -2107,11 +2107,13 @@ h4 {
   font-weight: 900;
   font-size: 20px;
   line-height: 1;
+  text-shadow: 12px 3px 18px black;
 }
 .categories__categories-quantity {
   color: var(--light-color);
   font-weight: 500;
   font-size: 14px;
+  text-shadow: 12px 3px 18px black;
 }
 
 .recomendations {
@@ -2152,7 +2154,7 @@ h4 {
   box-shadow: var(--site-preview-shadow);
   border: 1px solid transparent;
   border-radius: 5px;
-  background: url(../media/previews/girl-2.jpg) center/cover no-repeat;
+  background: url(../media/previews/girl-2.webp) center/cover no-repeat;
   min-block-size: 95px;
   display: flex;
   justify-content: center;
@@ -2180,6 +2182,7 @@ h4 {
   color: var(--light-color);
   font-weight: 900;
   font-size: 20px;
+  text-shadow: -27px 6px 32px black;
   text-transform: uppercase;
 }
 .recomendations__site-text {
@@ -2290,7 +2293,7 @@ h4 {
   flex-direction: column;
   align-items: end;
   border-radius: var(--br-input);
-  background: url(../media/pages/review-site/cover/main-cover.jpg) center/cover no-repeat;
+  background: url(../media/pages/review-site/cover/main-cover.webp) center/cover no-repeat;
   padding-block-start: 9px;
   inline-size: 100%;
   min-inline-size: 450px;

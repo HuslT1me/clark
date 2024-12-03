@@ -28,7 +28,6 @@
 
   &__article-wrapper {
     background: url(../media/grad.png) center/cover no-repeat;
-    
   }
 
   &__categories-link {
@@ -37,14 +36,14 @@
     box-shadow: 4px 6px 11.8px 0px #00000042;
     border: 1px solid transparent;
     border-radius: var(--br-previews);
-    background: url(../media/previews/girl.jpg) center/cover no-repeat;
+    background: url(../media/previews/girl.webp) center/cover no-repeat;
     min-block-size: 134px;
 
     @include flex-center;
     @include hover {
       border-color: var(--alt-accent-color);
 
-      .categories__text-block > p {
+       p {
         transition: var(--transition-duration);
         color: var(--pink-hover);
       }
@@ -56,11 +55,13 @@
     font-weight: 900;
     font-size: 20px;
     line-height: 1;
+    text-shadow: 12px 3px 18px black;
   }
 
   &__categories-quantity {
     color: var(--light-color);
     font-weight: 500;
     font-size: 14px;
+    text-shadow: 12px 3px 18px black;
   }
 }
