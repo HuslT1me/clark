@@ -42,6 +42,8 @@
   }
 
   &__text-block {
+    font-size: 14px;
+
     @include w-full(973px);
   }
 

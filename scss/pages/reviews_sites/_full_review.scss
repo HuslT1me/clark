@@ -38,9 +38,15 @@
     }
   }
 
+  &__list-wrapper--score {
+    background-image: url(../media/pages/review-site/background/background.png);
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
   &__title-block {
     display: inline-block;
-    inline-size: max-content;
     position: absolute;
     top: -9px;
     left: 50%;
@@ -48,6 +54,7 @@
     border-radius: var(--br-input);
     background: var(--light-color);
     padding-inline: 5px;
+    inline-size: max-content;
   }
 
   &__list-title {

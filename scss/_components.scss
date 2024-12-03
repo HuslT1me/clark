@@ -87,9 +87,8 @@
       display: none;
       justify-content: start;
       padding-inline: 0;
-      color: var(--burger-text);
       padding-inline-start: 22px;
-
+      color: var(--burger-text);
     }
 
     @include hover {
@@ -622,10 +621,6 @@
       background: url(../media/icons/cons.svg) center/contain no-repeat;
     }
   }
-}
-
-.score-list-wrapper {
-  background: url(../media/pages/review-site/background/background.png) bottom/contain no-repeat;
 }
 
 .score-list {
