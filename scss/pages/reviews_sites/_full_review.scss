@@ -25,6 +25,10 @@
     }
   }
 
+  &__list-wrapper {
+    background-color: var(--list-bg);
+  }
+
   &__list-title {
     display: flex;
     column-gap: 5px;

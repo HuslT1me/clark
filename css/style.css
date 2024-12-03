@@ -218,6 +218,7 @@ svg * {
   --table-background: #f1f1f1;
   --table-background-alt: #ebebeb;
   --price-bg: #f7f7f7;
+  --list-bg: #f8f8f8;
   /* fonts */
   --font-base: "Roboto", sans-serif;
   --font-accent: "BebasNeue", sans-serif;
@@ -2555,6 +2556,9 @@ h4 {
     min-inline-size: auto;
     max-inline-size: 100%;
   }
+}
+.full_review__list-wrapper {
+  background-color: var(--list-bg);
 }
 .full_review__list-title {
   display: flex;
