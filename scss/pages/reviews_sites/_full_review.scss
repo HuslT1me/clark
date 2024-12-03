@@ -11,7 +11,7 @@
 
     @include tablet {
       flex-direction: column;
-      padding: 10px;
+      padding: 20px 10px 10px;
     }
   }
 
@@ -26,7 +26,28 @@
   }
 
   &__list-wrapper {
+    position: relative;
+    border-radius: var(--br-button);
     background-color: var(--list-bg);
+    padding: 20px 10px 10px;
+  }
+
+  &__list-wrapper:last-child {
+    @include desktop {
+      margin-block-end: 10px;
+    }
+  }
+
+  &__title-block {
+    display: inline-block;
+    inline-size: max-content;
+    position: absolute;
+    top: -9px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: var(--br-input);
+    background: var(--light-color);
+    padding-inline: 5px;
   }
 
   &__list-title {
@@ -47,7 +68,7 @@
     }
   }
 
-  &__list-title--score {
+  &__list-title--scales {
     align-items: baseline;
 
     &::before {
@@ -102,7 +123,6 @@
   }
 
   &__list-title--bonus {
-    margin-block-end: 9px;
     &::before {
       background: url(../media/icons/bonus.svg) center/contain no-repeat;
       inline-size: 16px;
@@ -111,8 +131,6 @@
   }
 
   &__list-title--best {
-    margin-block-end: 9px;
-
     &::before {
       background: url(../media/icons/best.svg) center/contain no-repeat;
       inline-size: 18px;
@@ -121,8 +139,6 @@
   }
 
   &__list-title--company {
-    margin-block-end: 9px;
-
     &::before {
       background: url(../media/icons/company.svg) center/contain no-repeat;
       inline-size: 15px;
@@ -131,7 +147,7 @@
   }
 
   &__list-wrapper--mb {
-    margin-block-end: 25px;
+    margin-block-end: 20px;
   }
 
   &__text-block {

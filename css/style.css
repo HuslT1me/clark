@@ -2523,8 +2523,7 @@ h4 {
 }
 @media (max-width: 767px) {
   .preview__button-visit--hidden {
-    margin: 10px 20px 0;
-    max-inline-size: 100%;
+    max-inline-size: calc(100% - 40px);
   }
 }
 
@@ -2542,7 +2541,7 @@ h4 {
 @media (max-width: 1023px) {
   .full_review__inner {
     flex-direction: column;
-    padding: 10px;
+    padding: 20px 10px 10px;
   }
 }
 .full_review__content--left-block {
@@ -2557,7 +2556,26 @@ h4 {
   }
 }
 .full_review__list-wrapper {
+  position: relative;
+  border-radius: var(--br-button);
   background-color: var(--list-bg);
+  padding: 20px 10px 10px;
+}
+@media (max-width: 1280px) {
+  .full_review__list-wrapper:last-child {
+    margin-block-end: 10px;
+  }
+}
+.full_review__title-block {
+  display: inline-block;
+  inline-size: max-content;
+  position: absolute;
+  top: -9px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: var(--br-input);
+  background: var(--light-color);
+  padding-inline: 5px;
 }
 .full_review__list-title {
   display: flex;
@@ -2574,10 +2592,10 @@ h4 {
   display: block;
   content: "";
 }
-.full_review__list-title--score {
+.full_review__list-title--scales {
   align-items: baseline;
 }
-.full_review__list-title--score::before {
+.full_review__list-title--scales::before {
   background: url(../media/icons/scales.svg) center/contain no-repeat;
   inline-size: 18px;
   block-size: 15px;
@@ -2613,24 +2631,15 @@ h4 {
   inline-size: 21px;
   block-size: 13px;
 }
-.full_review__list-title--bonus {
-  margin-block-end: 9px;
-}
 .full_review__list-title--bonus::before {
   background: url(../media/icons/bonus.svg) center/contain no-repeat;
   inline-size: 16px;
   block-size: 17px;
 }
-.full_review__list-title--best {
-  margin-block-end: 9px;
-}
 .full_review__list-title--best::before {
   background: url(../media/icons/best.svg) center/contain no-repeat;
   inline-size: 18px;
   block-size: 17px;
-}
-.full_review__list-title--company {
-  margin-block-end: 9px;
 }
 .full_review__list-title--company::before {
   background: url(../media/icons/company.svg) center/contain no-repeat;
@@ -2638,7 +2647,7 @@ h4 {
   block-size: 14px;
 }
 .full_review__list-wrapper--mb {
-  margin-block-end: 25px;
+  margin-block-end: 20px;
 }
 .full_review__text-block {
   margin-block-end: 25px;
