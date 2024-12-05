@@ -303,7 +303,7 @@
     margin-block-end: 5px;
     color: var(--dark-color-text);
     font-weight: 500;
-    font-size: 14px;
+    font-size: var(--modal-title);
     text-align: left;
     text-transform: capitalize;
 
@@ -312,6 +312,10 @@
       inline-size: 5px;
       block-size: 15px;
       content: '';
+    }
+
+    @include desktop {
+      font-size: 14px;
     }
   }
 
@@ -325,7 +329,7 @@
     position: relative;
     color: var(--dark-color-text);
     font-weight: 500;
-    font-size: 13px;
+    font-size: var(--modal-text);
 
     &::before {
       display: block;
@@ -341,6 +345,10 @@
     @include hover {
       transition: var(--transition-duration);
       color: var(--alt-accent-color);
+    }
+
+    @include desktop {
+      font-size: 13px;
     }
   }
 }
@@ -470,11 +478,15 @@
     transition: var(--transition-duration);
     color: var(--alt-accent-color);
     font-weight: 500;
-    font-size: 15px;
+    font-size: var(--article-title);
     text-transform: capitalize;
 
     @include hover {
       opacity: 0.8;
+    }
+
+    @include desktop {
+      font-size: 15px;
     }
   }
 
@@ -486,7 +498,13 @@
   }
 
   &__description {
+    font-size: var(--article-description);
+
     @include w-full(477px);
+
+    @include desktop {
+      font-size: 12px;
+    }
   }
 }
 
@@ -575,8 +593,13 @@
   line-height: 1;
   font-family: var(--font-accent);
   text-transform: uppercase;
+  display: flex;
+  justify-content: center;
 
-  @include flex-center(true);
+
+  &__text {
+    margin-block-start: 3px;
+  }
 }
 
 .cover-tag--blue {
@@ -627,14 +650,18 @@
   margin-inline: auto;
   margin-block-end: 40px;
 
-  @include w-full(232px);
+  @include w-full(283px);
 
   &__item {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    font-size: 16px;
+    font-size: var(--score-list);
     font-family: var(--font-accent);
+
+    @include desktop {
+      font-size: 16px;
+    }
   }
 
   &__item-text {

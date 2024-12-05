@@ -64,6 +64,12 @@
     }
   }
 
+  &__description-text-wrapper {
+    @include desktop {
+      margin-block-end: 10px;
+    }
+  }
+
   &__description-text {
     color: var(--dark-color-text);
   }
@@ -75,7 +81,7 @@
     align-items: center;
     background: var(--light-color);
     color: black;
-    font-size: 20px;
+    font-size: var(--price-title);
     text-transform: uppercase;
 
     &::before {
@@ -107,6 +113,10 @@
         display: none;
       }
     }
+
+    @include desktop {
+      font-size: 17px;
+    }
   }
 
   &__offers-wrapper {
@@ -126,9 +136,9 @@
     flex-direction: column;
     justify-content: end;
     border-radius: 11px;
+    background: var(--price-bg);
     inline-size: 100%;
     min-block-size: 157px;
-    background: var(--price-bg);
 
     @include tablet {
       column-gap: 20px;
