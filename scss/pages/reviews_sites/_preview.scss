@@ -18,11 +18,12 @@
   &__cover-block {
     display: flex;
     position: relative;
+    position: relative;
     row-gap: 5px;
     flex-direction: column;
     align-items: end;
+    z-index: 1;
     border-radius: var(--br-input);
-    background: url(../media/pages/review-site/cover/main-cover.webp) center/cover no-repeat;
     padding-block-start: 9px;
     inline-size: 100%;
     min-inline-size: 450px;
@@ -37,6 +38,17 @@
       top: 0;
       left: 13px;
     }
+  }
+
+  &__cover-img {
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    border-radius: var(--br-input);
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+    object-position: center;
   }
 
   &__info-wrapper {

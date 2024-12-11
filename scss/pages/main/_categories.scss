@@ -31,13 +31,14 @@
   }
 
   &__categories-link {
+    position: relative;
     flex-direction: column;
     transition: var(--transition-duration);
     box-shadow: 4px 6px 11.8px 0px #00000042;
     border: 1px solid transparent;
     border-radius: var(--br-previews);
-    background: url(../media/previews/girl.webp) center/cover no-repeat;
     min-block-size: 134px;
+    z-index: 99;
 
     @include flex-center;
     @include hover {
@@ -48,6 +49,17 @@
         color: var(--pink-hover);
       }
     }
+  }
+
+  &__link-cover {
+    inline-size: 100%;
+    block-size: 100%;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    object-fit: cover;
+    object-position: center;
+    border-radius: var(--br-previews);
   }
 
   &__categories-name {

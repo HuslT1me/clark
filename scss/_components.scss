@@ -462,15 +462,27 @@
     align-items: end;
     margin-block-end: 5px;
     border-radius: var(--br-previews) var(--br-previews) 0 0;
-    background: url(../media/pages/reviews/site-article-cover.webp) center/cover no-repeat;
     padding-block-start: 5px;
     inline-size: 100%;
     min-block-size: 152px;
+    z-index: 1;
+  }
+
+  &__cover-img {
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    border-radius: var(--br-previews) var(--br-previews) 0 0;
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+    object-position: center;
   }
 
   &__name {
     display: flex;
     column-gap: 5px;
+    align-items: center;
     margin-block-end: 5px;
   }
 
@@ -583,6 +595,8 @@
 }
 
 .cover-tag {
+  display: flex;
+  justify-content: center;
   margin-inline-end: 5px;
   border-radius: var(--br-button);
   background: var(--light-color);
@@ -593,9 +607,6 @@
   line-height: 1;
   font-family: var(--font-accent);
   text-transform: uppercase;
-  display: flex;
-  justify-content: center;
-
 
   &__text {
     margin-block-start: 3px;

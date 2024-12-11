@@ -1172,14 +1172,25 @@ h4 {
   align-items: end;
   margin-block-end: 5px;
   border-radius: var(--br-previews) var(--br-previews) 0 0;
-  background: url(../media/pages/reviews/site-article-cover.webp) center/cover no-repeat;
   padding-block-start: 5px;
   inline-size: 100%;
   min-block-size: 152px;
+  z-index: 1;
+}
+.site-article__cover-img {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  border-radius: var(--br-previews) var(--br-previews) 0 0;
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 .site-article__name {
   display: flex;
   column-gap: 5px;
+  align-items: center;
   margin-block-end: 5px;
 }
 .site-article__link-review {
@@ -1308,6 +1319,8 @@ h4 {
 }
 
 .cover-tag {
+  display: flex;
+  justify-content: center;
   margin-inline-end: 5px;
   border-radius: var(--br-button);
   background: var(--light-color);
@@ -1318,8 +1331,6 @@ h4 {
   line-height: 1;
   font-family: var(--font-accent);
   text-transform: uppercase;
-  display: flex;
-  justify-content: center;
 }
 .cover-tag__text {
   margin-block-start: 3px;
@@ -2111,13 +2122,14 @@ h4 {
   background: url(../media/grad.png) center/cover no-repeat;
 }
 .categories__categories-link {
+  position: relative;
   flex-direction: column;
   transition: var(--transition-duration);
   box-shadow: 4px 6px 11.8px 0px rgba(0, 0, 0, 0.2588235294);
   border: 1px solid transparent;
   border-radius: var(--br-previews);
-  background: url(../media/previews/girl.webp) center/cover no-repeat;
   min-block-size: 134px;
+  z-index: 99;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2139,6 +2151,16 @@ h4 {
     transition: var(--transition-duration);
     color: var(--pink-hover);
   }
+}
+.categories__link-cover {
+  inline-size: 100%;
+  block-size: 100%;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  object-fit: cover;
+  object-position: center;
+  border-radius: var(--br-previews);
 }
 .categories__categories-name {
   color: var(--light-color);
@@ -2188,12 +2210,13 @@ h4 {
   }
 }
 .recomendations__cover-block {
+  position: relative;
   margin-block-end: 5px;
   box-shadow: var(--site-preview-shadow);
   border: 1px solid transparent;
   border-radius: 5px;
-  background: url(../media/previews/girl-2.webp) center/cover no-repeat;
   min-block-size: 95px;
+  z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2215,6 +2238,14 @@ h4 {
     transition: var(--transition-duration);
     color: var(--pink-hover);
   }
+}
+.recomendations__cover-img {
+  position: absolute;
+  inset: 0;
+  border-radius: 5px;
+  inline-size: 100%;
+  block-size: 100%;
+  z-index: -1;
 }
 .recomendations__cover-text {
   color: var(--light-color);
@@ -2333,11 +2364,12 @@ h4 {
 .preview__cover-block {
   display: flex;
   position: relative;
+  position: relative;
   row-gap: 5px;
   flex-direction: column;
   align-items: end;
+  z-index: 1;
   border-radius: var(--br-input);
-  background: url(../media/pages/review-site/cover/main-cover.webp) center/cover no-repeat;
   padding-block-start: 9px;
   inline-size: 100%;
   min-inline-size: 450px;
@@ -2352,6 +2384,16 @@ h4 {
 .preview__cover-block .flag-decor {
   top: 0;
   left: 13px;
+}
+.preview__cover-img {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  border-radius: var(--br-input);
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 .preview__info-wrapper {
   display: flex;
